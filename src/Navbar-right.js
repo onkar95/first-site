@@ -59,7 +59,7 @@ function Navbar2(props) {
                             </span>
                             <Link to="" className="forgt-pass">forget password</Link>
                         </div>
-                        <button className="login-btn">Login</button>
+                        <Link to="" className="login-btn">Login</Link>
                         <div>
                             <Link to="" className="cret-account">No Account?Create here?</Link>
                         </div>
@@ -67,9 +67,9 @@ function Navbar2(props) {
                         <hr className="hr-form" />
                         <h2 className="connect">Connect us</h2>
                         <ul className="social-media">
-                            <Link to=""><Facebook /></Link>
-                            <Link to=""><Instagram /></Link>
-                            <Link to=""><Twitter /></Link>
+                            <Link to="www.facebook.com"><Facebook /></Link>
+                            <Link to="www.instagram.com"><Instagram /></Link>
+                            <Link to="www.twitter.com"><Twitter /></Link>
                         </ul>
                     </form>
 
