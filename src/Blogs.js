@@ -6,6 +6,8 @@ import image from './images/img8.jpg'
 // import Arrowr from '@material-ui/icons/ArrowForwardIos';
 // import {Link, useLocation} from 'react-router-dom'
 import Showing from './Showing';
+import {Link} from 'react-router-dom'
+
 
 function Blog() {
     return (
@@ -45,8 +47,8 @@ function Blog() {
                         <div className="dropdown">
                             <button className="dropbtn collaps">+</button>
                             <div className="dropdown-content">
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <Link to="/home">Link 1</Link>
+                                <Link to="/home">Link 2</Link>
                             </div>
                         </div>
                     </div>
@@ -54,9 +56,9 @@ function Blog() {
                         <h2>Recent Articles</h2>
                         <hr />
                         <div className="menu-article">
-                            <img src={image} alt="image is loading"></img>
+                            <img src={image} alt=" is loading"></img>
                             <div className="menu-article-content">
-                                <a href="" className="article-link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                <Link to="/home" className="article-link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</Link>
                                 <p>Dec ,18 2020</p>
                             </div>
                         </div>
@@ -66,15 +68,15 @@ function Blog() {
                     <div className="menu-tag-post">
                         <h2>Tags Post</h2>
                         <hr />
-                        <a href="" className="posts">Onkar</a>
-                        <a href="" className="posts">Onkar</a>
-                        <a href="" className="posts">Onkar</a>
-                        <a href="" className="posts">Onkar</a>
-                        <a href="" className="posts">Onkar</a>
-                        <a href="" className="posts">Onkar</a>
-                        <a href="" className="posts">Onkar</a>
-                        <a href="" className="posts">Onkar</a>
-                        <a href="" className="posts">Onkar</a>
+                        <Link to="/home" className="posts">Onkar</Link>
+                        <Link to="/home" className="posts">Onkar</Link>
+                        <Link to="/home" className="posts">Onkar</Link>
+                        <Link to="/home" className="posts">Onkar</Link>
+                        <Link to="/home" className="posts">Onkar</Link>
+                        <Link to="/home" className="posts">Onkar</Link>
+                        <Link to="/home" className="posts">Onkar</Link>
+                        <Link to="/home" className="posts">Onkar</Link>
+                        <Link to="/home" className="posts">Onkar</Link>
                     </div>
                 </div>
             </div>

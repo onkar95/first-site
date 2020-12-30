@@ -7,6 +7,7 @@ import Account from '@material-ui/icons/AccountCircle';
 import Facebook from '@material-ui/icons/Facebook';
 import Instagram from '@material-ui/icons/Instagram';
 import Twitter from '@material-ui/icons/Twitter';
+import {Link} from 'react-router-dom'
 
 
 
@@ -14,7 +15,7 @@ function Navbar2(props) {
     const [logins, loginh] = useState('none');
     const [carts, carth] = useState('none');
     const Login = () => {
-        if (logins == 'none' ) {
+        if (logins === 'none' ) {
             loginh('block');
             carth('none');
     
@@ -33,42 +34,42 @@ function Navbar2(props) {
 
         }
     }
-    const hide = () => {
-        carth('none');
-        loginh('none');
+    // const hide = () => {
+    //     carth('none');
+    //     loginh('none');
 
-    }
+    // }
  return(
     <div className="right-buttons" style={{display:props.display}}>
         <div className="dropbtn new-dropbtn"><Search /></div>
         <div className="dropdown">
-            <div className="dropbtn" onClick={hide}  onClick={Login}><Account /></div>
+            <div className="dropbtn"   onClick={Login}><Account /></div>
             <div className="dropdown-content" style={{display:logins}} >
                 <div className="login-content">
                     <form action="" className="login-form">
                         <h1>Login to  Account</h1>
                         <div className="input">
                             <input type="text" name="name" id="name" placeholder="Enter Your Name" autoComplete="off" />
-                            <input type="text" name=" password" id="name" placeholder="Enter Your password" autoComplete="off" />
+                            <input type="text" name=" password" id="password" placeholder="Enter Your password" autoComplete="off" />
                         </div>
                         <div className="checkbox-a" data-toggle="buttons">
-                            <span href="" style={{ display: 'flex',margin: '10px 2px' }}>
+                            <span  style={{ display: 'flex',margin: '10px 2px' }}>
                                 <input type="checkbox" name="" id="" autocomplete="off" style={{ margin: '2px' }} />
                                 <div>Remember me</div>
                             </span>
-                            <a href="" className="forgt-pass">forget password</a>
+                            <Link to="" className="forgt-pass">forget password</Link>
                         </div>
                         <button className="login-btn">Login</button>
                         <div>
-                            <a href="" className="cret-account">No Account?Create here?</a>
+                            <Link to="" className="cret-account">No Account?Create here?</Link>
                         </div>
 
                         <hr className="hr-form" />
                         <h2 className="connect">Connect us</h2>
                         <ul className="social-media">
-                            <a href=""><Facebook /></a>
-                            <a href=""><Instagram /></a>
-                            <a href=""><Twitter /></a>
+                            <Link to=""><Facebook /></Link>
+                            <Link to=""><Instagram /></Link>
+                            <Link to=""><Twitter /></Link>
                         </ul>
                     </form>
 

@@ -5,6 +5,7 @@ import image from './images/img8.jpg'
 import Like from '@material-ui/icons/Favorite';
 import Categori from '@material-ui/icons/SubjectRounded';
 // import Showing from './Showing';
+// import {Link} from 'react-router-dom'
 
 
 
@@ -36,7 +37,7 @@ function Boxes() {
     return (
         <>
             <div className="boxes">
-                <img src={image} alt="image is loading" className=""></img>
+                <img src={image} alt=" is loading" className=""></img>
                 <h2> Hello and Welcome</h2>
                 <div className="starting-of-box">
                     <button className="box-buttons"><em className="fas fa-user-circle"></em>Leo

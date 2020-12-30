@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import Search from '@material-ui/icons/Search';
-import Cart from '@material-ui/icons/AddShoppingCart';
-import Like from '@material-ui/icons/Favorite';
+// import Search from '@material-ui/icons/Search';
+// import Cart from '@material-ui/icons/AddShoppingCart';
+// import Like from '@material-ui/icons/Favorite';
 import Facebook from '@material-ui/icons/Facebook';
 import Instagram from '@material-ui/icons/Instagram';
 import Twitter from '@material-ui/icons/Twitter';
@@ -15,9 +15,9 @@ function Navbar() {
     const [l, m] = useState('0px');
     const [hideNavbar, showNavbar] = useState();
     let location = useLocation();
-    let width = () => {
+    // let width = () => {
         
-    }
+    // }
 
 
     const openNav = () => {
@@ -42,17 +42,17 @@ function Navbar() {
         }
         
     }
-    const closeMenu = () => {
-        if (hideNavbar === 'none' ) {
-            showNavbar('flex')
-            m('none')
+    // const closeMenu = () => {
+    //     if (hideNavbar === 'none' ) {
+    //         showNavbar('flex')
+    //         m('none')
 
-        }
-        else {
-            showNavbar('none')
-            m('flex')
-        }
-    }
+    //     }
+    //     else {
+    //         showNavbar('none')
+    //         m('flex')
+    //     }
+    // }
 
 
     return (
@@ -78,23 +78,23 @@ function Navbar() {
                             <div className="language">
                                 <h4>language</h4>
                                 <div className="language-name">
-                                    <a href="#">English</a>
-                                    <a href="#">English</a>
-                                    <a href="#">English</a>
-                                    <a href="#">English</a>
-                                    <a href="#">English</a>
-                                    <a href="#">English</a>
-                                    <a href="#">English</a>
-                                    <a href="#">English</a>
+                                    <Link to="">English</Link>
+                                    <Link to="">English</Link>
+                                    <Link to="">English</Link>
+                                    <Link to="">English</Link>
+                                    <Link to="">English</Link>
+                                    <Link to="">English</Link>
+                                    <Link to="">English</Link>
+                                    <Link to="">English</Link>
                                 </div>
                             </div>
                             <div className="language">
                                 <h4>language</h4>
                                 <div className="language-name">
-                                    <div><a href="#">Aus$</a></div>
-                                    <div><a href="#">Aus$</a></div>
-                                    <div><a href="#">Aus$</a></div>
-                                    <div><a href="#">Aus$</a></div>
+                                    <div><Link>Aus$</Link></div>
+                                    <div><Link>Aus$</Link></div>
+                                    <div><Link>Aus$</Link></div>
+                                    <div><Link>Aus$</Link></div>
                                 </div>
                             </div>
                             <hr />
@@ -112,9 +112,9 @@ function Navbar() {
                             <div className="connectus" style={{ marginBottom: '20px' }}>
                                 <h2 className="connect">Connect us</h2>
                                 <ul className="social-media">
-                                    <a href=""><Facebook /></a>
-                                    <a href=""><Instagram /></a>
-                                    <a href=""><Twitter /></a>
+                                    <Link to=""><Facebook /></Link>
+                                    <Link to=""><Instagram /></Link>
+                                    <Link to=""><Twitter /></Link>
                                 </ul>
                             </div>
                         </div>
@@ -127,21 +127,21 @@ function Navbar() {
                                 <Link className="dropbtn" to='/home' >HOME</Link>
                                 <div className="dropdown-content">
                                     <div className="dropdown-content-grid">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
+                                        <Link to="">Link 1</Link>
+                                        <Link to="">Link 2</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
                                     </div>
                                 </div>
                             </div>
@@ -150,21 +150,21 @@ function Navbar() {
                                 <div className="dropdown-content">
 
                                     <div className="dropdown-content-grid">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
+                                        <Link to="">Link 1</Link>
+                                        <Link to="">Link 2</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
                                     </div>
                                 </div>
                             </div>
@@ -173,21 +173,21 @@ function Navbar() {
                                 <div className="dropdown-content">
 
                                     <div className="dropdown-content-grid">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
+                                        <Link to="">Link 1</Link>
+                                        <Link to="">Link 2</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
                                     </div>
                                 </div>
                             </div>
@@ -196,21 +196,21 @@ function Navbar() {
                                 <div className="dropdown-content">
 
                                     <div className="dropdown-content-grid">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
-                                        <a href="#">Link 3</a>
+                                        <Link to="">Link 1</Link>
+                                        <Link to="">Link 2</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
+                                        <Link to="">Link 3</Link>
                                     </div>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@ function Navbar() {
                 </div>
                 <div className="navbar-r2">
                     <div className="schema">
-                        <div>{ window.location.pathname}</div>
+                        <div>{ location.pathname}</div>
                     </div>
                 </div>
             </div>

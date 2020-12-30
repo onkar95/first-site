@@ -8,8 +8,7 @@ import './App.css';
 function Home() {
     return (
         <>
-            <h1>hello</h1>
-            <div>by</div>
+            
         </>
     )
 }
