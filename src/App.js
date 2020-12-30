@@ -10,7 +10,7 @@ import './navbar.css'
 import './blog-menu.css'
 import './index.css'
 import './navbarbuttons.css'
-import { Route, Switch } from 'react-router-dom';
+// import { Route, Switch } from 'react-router-dom';
 // import Footer from './Footer';
 // import Showing from './Showing';
 // import Extrabox from './Extrabox';
