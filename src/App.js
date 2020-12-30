@@ -1,5 +1,5 @@
 import React from 'react';
-// import Navbar from './Navbar';
+import Navbar from './Navbar';
 import Home from './Home';
 // import Contact from './Contact';
 // import Blog from './Blogs'
@@ -19,7 +19,7 @@ import './navbarbuttons.css'
 function App() {
   return (
     < >
-      {/* <Navbar /> */}
+      <Navbar />
       <Home/>
       {/* <Switch>
         <Route path='/home' component={Home}></Route>
