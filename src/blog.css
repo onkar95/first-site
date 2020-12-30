@@ -1,0 +1,154 @@
+#blog {
+    display: flex;
+    margin: 25px 10px;
+
+}
+
+
+
+.blog {
+    display: flex;
+    height: 75%;
+    width: 80%;
+    flex-wrap: wrap;
+
+    /* flex-wrap: wrap; */
+}
+
+.blog-h1 {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.blog-box-container {
+    display: flex;
+    /* flex-direction: column; */
+    /* position: relative; */
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.boxes {
+    display: flex;
+    height: fit-content;
+    width: 48%;
+    flex-direction: column;
+    margin: 5px 5px;
+    background-color: #ecf8f6f7;
+    /* border: 0.5px solid black; */
+}
+
+.boxes img {
+    height: auto;
+    width: 100%;
+}
+
+.starting-of-box {
+    display: flex;
+    /* height: 50%; */
+    /* width: 50%; */
+    margin: 1px 0px;
+}
+
+.box-buttons {
+    display: flex;
+    /* height: 50%; */
+    /* width: 42%; */
+    margin: 0px 10px;
+    background-color: #ecf8f6f7;
+    border: none;
+    margin-top: 13px;
+    margin-bottom: 2px;
+}
+
+.button-sign {
+    margin: 5px;
+    /* font-size: 0.1rem; */
+}
+
+.middle-of-box {
+    text-align: justify;
+    margin: 15px 5px;
+    overflow: hidden;
+    height: 35px;
+}
+
+.bottom-of-box {
+    display: flex;
+    /* height: 50%;
+    width: 50%; */
+    margin: 5px 5px;
+}
+
+.bottom-box-button {
+    margin: 5px 5px;
+    margin-left: 67%;
+    background-color:transparent;
+    text-decoration: none;
+    border: none;
+    font-size: 1.1rem;
+    width: 100%;
+}
+.bottom-box-button:hover {
+    color: #666;
+    border-style: none;
+    box-sizing: none;
+    cursor:pointer;
+
+}
+.bottom-box-button:active {
+}
+
+.month-year {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.date {
+    font-size: 2rem;
+}
+
+button i {
+    font-size: 1.1rem;
+}
+.show-btn{
+    margin-right: 2px;
+}
+
+
+.blog-page-info {
+    display: flex;
+    height: 50px;
+    background-color: #c7c2c2;
+    width: 97%;
+    margin: 0px 3px;
+    margin-top: 30px;
+}
+.page-info-content{
+    width: 60%;
+    margin: 10px;
+    margin-right:100px ;
+}
+
+.number-buttons {
+    width: 30%;
+    margin: 15px 12px;
+    display: flex;
+}
+.number-buttons a {
+    height: 10px;
+    width: 10px;
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+}
+.number-buttons div {
+    width: 17px;
+    height: 20px;
+    border: 2px solid #1b1b19cc;
+    margin: 5px px;
+    margin: 0px 5px;
+    padding: 1px;
+    text-align: center;
+}
