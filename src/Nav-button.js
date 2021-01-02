@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 import './App.css';
 // import Search from '@material-ui/icons/Search';
 // import Cart from '@material-ui/icons/AddShoppingCart';
