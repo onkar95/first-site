@@ -10,7 +10,7 @@ import './navbar.css'
 import './blog-menu.css'
 import './index.css'
 import './navbarbuttons.css'
-import { Route, Switch, useLocation } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Footer from './Footer';
 // import Showing from './Showing';
 import Extrabox from './Extrabox';
@@ -20,11 +20,15 @@ import Extrabox from './Extrabox';
 
 function App() {
   
-  const location = useLocation();
+  // const location = useLocation();
+  // location=location.go(0)
+  // const load = () => {
+    
+  // }
 
   return (
     < >
-      <div   location={location.go(0)}>
+      <div  >
       <Navbar />
       <Home/>
       <Switch>
@@ -35,7 +39,7 @@ function App() {
       </Switch>
       <br/>
       <Switch>
-        <Route path='/contact' component={Contact}></Route>
+        <Route path='/contact' component={Contact} ></Route>
       </Switch>
       <Switch>
         <Route path='/blog-boxes' component={Extrabox}></Route>
