@@ -48,6 +48,9 @@
 .navbar1-small-button{
     display: none;
 }
+.small-nav{
+    display: none;
+}
 .close-btn1{
     width: fit-content;
     background-color:transparent;

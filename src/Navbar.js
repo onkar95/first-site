@@ -3,12 +3,14 @@ import './App.css';
 // import Search from '@material-ui/icons/Search';
 // import Cart from '@material-ui/icons/AddShoppingCart';
 // import Like from '@material-ui/icons/Favorite';
-import Facebook from '@material-ui/icons/Facebook';
-import Instagram from '@material-ui/icons/Instagram';
-import Twitter from '@material-ui/icons/Twitter';
-import Navbar2 from "./Navbar-right";
+// import Facebook from '@material-ui/icons/Facebook';
+// import Instagram from '@material-ui/icons/Instagram';
+// import Twitter from '@material-ui/icons/Twitter';
+import NavbarRights from "./Navbar-right";
 import Close from '@material-ui/icons/Clear';
-import {Link, useLocation} from 'react-router-dom'
+import {  useLocation } from 'react-router-dom'
+import Sidebar from './Sidebar'
+import NavButton from './Nav-button';
 
 function Navbar() {
     const [hide, show] = useState();
@@ -16,7 +18,7 @@ function Navbar() {
     const [hideNavbar, showNavbar] = useState();
     let location = useLocation();
     // let width = () => {
-        
+
     // }
 
 
@@ -40,192 +42,51 @@ function Navbar() {
             showNavbar('none')
             m('flex')
         }
-        
+
     }
-    // const closeMenu = () => {
-    //     if (hideNavbar === 'none' ) {
-    //         showNavbar('flex')
-    //         m('none')
 
-    //     }
-    //     else {
-    //         showNavbar('none')
-    //         m('flex')
-    //     }
-    // }
+    const smallScreen = () => {
+        let nav = document.getElementById("smallNav");
+        let btn = document.getElementById("btn")
+        return (nav.style.display = 'none',
+            btn.style.display = 'none'
+        )
+    }
+    const closeMenu = () => {
+        if (hideNavbar === 'flex') {
+            showNavbar('none')
+            m('flex')
 
+        }
+        
 
+    }
     return (
         <>
             <div id="navbar">
                 <div className="heading">My Store</div>
-                <div className="small-nav">
-                    <div>
-                        <button className="navbar1-small-button" style={{display:l}} onClick={openMenu }>&#9776;</button>
+                <div className="small-nav"  >
+                    <button className="navbar1-small-button" style={{ display: l }} id="btn" onMouseLeave={closeMenu} onClick={openMenu}>&#9776;</button>
+                    <div >
+                        <div className="navbar-r1  smallScreen-navbar-r1 " style={{ display: hideNavbar }} >
+                            <button className="close-btn" style={{ display: m }} onClick={openMenu}><Close /></button>
+                            <Sidebar />
+                            <NavButton smallScreen={smallScreen}/>
+                        </div>
                     </div>
-                    <div className="right-nav"><Navbar2 /></div>
+                </div>
+                <div>
+                    <div className="right-nav"><NavbarRights /></div>
                 </div>
                 <div className="navbar-r1 " style={{ display: hideNavbar }} >
-                <button className="close-btn"  onClick={openMenu }><Close/></button>
-                    <div id="sidebar">
-                        <div id="mySidebar" className="sidebar" style={{
-                            display: hide,
-                            overflowY:'scroll'
-
-                        }}>
-                <button className="close-btn1"  onClick={closeSidebar }><Close/></button>
-
-                            <div className="language">
-                                <h4>language</h4>
-                                <div className="language-name">
-                                    <Link to="">English</Link>
-                                    <Link to="">English</Link>
-                                    <Link to="">English</Link>
-                                    <Link to="">English</Link>
-                                    <Link to="">English</Link>
-                                    <Link to="">English</Link>
-                                    <Link to="">English</Link>
-                                    <Link to="">English</Link>
-                                </div>
-                            </div>
-                            <div className="language">
-                                <h4>language</h4>
-                                <div className="language-name">
-                                    <div><Link>Aus$</Link></div>
-                                    <div><Link>Aus$</Link></div>
-                                    <div><Link>Aus$</Link></div>
-                                    <div><Link>Aus$</Link></div>
-                                </div>
-                            </div>
-                            <hr />
-                            <div className="sidebar-text">
-                                <h3>Welcome to our store</h3>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, placeat perspiciatis!
-                                    Beatae sequi aperiam at
-                                    voluptatibus iusto unde aliquam a assumenda error nisi corporis, voluptatem rem.
-                                    Expedita voluptatum
-                                    voluptatibus totam!
-                                   </p>
-                                </div>
-                            </div>
-                            <div className="connectus" style={{ marginBottom: '20px' }}>
-                                <h2 className="connect">Connect us</h2>
-                                <ul className="social-media">
-                                    <Link to=""><Facebook /></Link>
-                                    <Link to=""><Instagram /></Link>
-                                    <Link to=""><Twitter /></Link>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="main" className="">
-                        </div>
-                    </div>
-                    <button className="openbtn"   onClick={openNav}>&#9776;</button>
-                    <div className="nav-button">
-                            <div className="dropdown">
-                                <Link className="dropbtn" to='/home' >HOME</Link>
-                                <div className="dropdown-content">
-                                    <div className="dropdown-content-grid">
-                                        <Link to="">Link 1</Link>
-                                        <Link to="">Link 2</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="dropdown">
-                            <Link className="dropbtn" to='/shop' >SHOP</Link>
-                                <div className="dropdown-content">
-
-                                    <div className="dropdown-content-grid">
-                                        <Link to="">Link 1</Link>
-                                        <Link to="">Link 2</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="dropdown">
-                            <Link className="dropbtn" to='/page' >PAGE</Link>
-                                <div className="dropdown-content">
-
-                                    <div className="dropdown-content-grid">
-                                        <Link to="">Link 1</Link>
-                                        <Link to="">Link 2</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="dropdown">
-                            <Link className="dropbtn" to='/about' >About</Link>
-                                <div className="dropdown-content">
-
-                                    <div className="dropdown-content-grid">
-                                        <Link to="">Link 1</Link>
-                                        <Link to="">Link 2</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                        <Link to="">Link 3</Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="dropdown">
-                            <Link className="dropbtn" to='/blog' >BLOG</Link>
-                            </div>
-                            <div className="dropdown">
-                            <Link className="dropbtn" to='/contact' >CONTACT</Link>
-                            </div>
-                    </div>
-                    <Navbar2 display="none" />
+                    <button className="close-btn" onClick={openMenu}><Close /></button>
+                    <Sidebar />
+                    <NavButton />
+                    <NavbarRights display="none"/>
                 </div>
                 <div className="navbar-r2">
                     <div className="schema">
-                        <div>{ location.pathname}</div>
+                        <div>{location.pathname}</div>
                     </div>
                 </div>
             </div>

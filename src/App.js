@@ -30,7 +30,7 @@ function App() {
     < >
       <div  >
       <Navbar />
-      <Home/>
+      {/* <Home/> */}
       <Switch>
         <Route path='/home' component={Home}></Route>
       </Switch>

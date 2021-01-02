@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom'
 
 
 
-function Navbar2(props) {
+function NavbarRight(props) {
     const [logins, loginh] = useState('none');
     const [carts, carth] = useState('none');
     const Login = () => {
@@ -95,4 +95,4 @@ function Navbar2(props) {
     </div>
  )
 }
-export default Navbar2;
+export default NavbarRight;
