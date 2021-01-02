@@ -74,15 +74,13 @@ function Navbar() {
                             <NavButton smallScreen={smallScreen}/>
                         </div>
                     </div>
-                </div>
-                <div>
                     <div className="right-nav"><NavbarRights /></div>
                 </div>
-                <div className="navbar-r1 " style={{ display: hideNavbar }} >
+                <div className="navbar-r1 "  >
                     <button className="close-btn" onClick={openMenu}><Close /></button>
                     <Sidebar />
                     <NavButton />
-                    <NavbarRights display="none"/>
+                    <NavbarRights />
                 </div>
                 <div className="navbar-r2">
                     <div className="schema">
