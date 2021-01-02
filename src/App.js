@@ -10,15 +10,21 @@ import './navbar.css'
 import './blog-menu.css'
 import './index.css'
 import './navbarbuttons.css'
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import Footer from './Footer';
 // import Showing from './Showing';
 import Extrabox from './Extrabox';
+// import createHistory from 'history/​createBrowserHistory'
+
 
 
 function App() {
+  
+  const location = useLocation();
+
   return (
     < >
+      <div   location={location.go(0)}>
       <Navbar />
       <Home/>
       <Switch>
@@ -36,6 +42,7 @@ function App() {
       </Switch>
       <hr/>
       <Footer/>
+    </div>
     </>
   );
 }
