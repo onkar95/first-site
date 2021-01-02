@@ -6,17 +6,17 @@ import './App.css';
 import Facebook from '@material-ui/icons/Facebook';
 import Instagram from '@material-ui/icons/Instagram';
 import Twitter from '@material-ui/icons/Twitter';
-import Navbar2 from "./Navbar-right";
+// import Navbar2 from "./Navbar-right";
 import Close from '@material-ui/icons/Clear';
-import { Link, useLocation } from 'react-router-dom'
-import NavButton from './Nav-button';
+import { Link } from 'react-router-dom'
+// import NavButton from './Nav-button';
 
 
 function Sidebar() {
     const [hide, show] = useState();
-    const [l, m] = useState('0px');
-    const [hideNavbar, showNavbar] = useState();
-    let location = useLocation();
+    // const [l, m] = useState('0px');
+    // const [hideNavbar, showNavbar] = useState();
+    // let location = useLocation();
     // let width = () => {
 
     // }
@@ -32,18 +32,18 @@ function Sidebar() {
         show('none')
     }
 
-    const openMenu = () => {
-        if (hideNavbar === 'none') {
-            showNavbar('flex')
-            m('none')
+    // const openMenu = () => {
+    //     if (hideNavbar === 'none') {
+    //         showNavbar('flex')
+    //         m('none')
 
-        }
-        else {
-            showNavbar('none')
-            m('flex')
-        }
+    //     }
+    //     else {
+    //         showNavbar('none')
+    //         m('flex')
+    //     }
 
-    }
+    // }
     // const closeMenu = () => {
     //     if (hideNavbar === 'none' ) {
     //         showNavbar('flex')

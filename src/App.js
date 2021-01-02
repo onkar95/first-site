@@ -22,13 +22,13 @@ function App() {
   
   // const location = useLocation();
   // location=location.go(0)
-  // const load = () => {
+  const load = () => {
     
-  // }
+  }
 
   return (
     < >
-      <div  >
+      <div onLoad={load}  >
       <Navbar />
       <Home/>
       <Switch>

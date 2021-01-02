@@ -13,7 +13,7 @@ import Sidebar from './Sidebar'
 import NavButton from './Nav-button';
 
 function Navbar() {
-    const [hide, show] = useState();
+    // const [hide, show] = useState();
     const [l, m] = useState('0px');
     const [hideNavbar, showNavbar] = useState();
     let location = useLocation();
@@ -22,15 +22,15 @@ function Navbar() {
     // }
 
 
-    const openNav = () => {
-        if (hide === 'none') {
-            show('flex')
-        }
-        else { show('none') }
-    }
-    const closeSidebar = () => {
-        show('none')
-    }
+    // const openNav = () => {
+    //     if (hide === 'none') {
+    //         show('flex')
+    //     }
+    //     else { show('none') }
+    // }
+    // const closeSidebar = () => {
+    //     show('none')
+    // }
 
     const openMenu = () => {
         if (hideNavbar === 'none') {
@@ -45,33 +45,33 @@ function Navbar() {
 
     }
 
-    const smallScreen = () => {
-        let nav = document.getElementById("smallNav");
-        let btn = document.getElementById("btn")
-        return (nav.style.display = 'none',
-            btn.style.display = 'none'
-        )
-    }
-    const closeMenu = () => {
-        if (hideNavbar === 'flex') {
-            showNavbar('none')
-            m('flex')
+    // const smallScreen = () => {
+    //     let nav = document.getElementById("smallNav");
+    //     let btn = document.getElementById("btn")
+    //     return (nav.style.display = 'none',
+    //         btn.style.display = 'none'
+    //     )
+    // }
+    // const closeMenu = () => {
+    //     if (hideNavbar === 'flex') {
+    //         showNavbar('none')
+    //         m('flex')
 
-        }
+    //     }
         
 
-    }
+    // }
     return (
         <>
             <div id="navbar">
                 <div className="heading">My Store</div>
                 <div className="small-nav"  >
-                    <button className="navbar1-small-button" style={{ display: l }} id="btn" onMouseLeave={closeMenu} onClick={openMenu}>&#9776;</button>
+                    <button className="navbar1-small-button" style={{ display: l }} id="btn"  onClick={openMenu}>&#9776;</button>
                     <div >
                         <div className="navbar-r1  smallScreen-navbar-r1 " style={{ display: hideNavbar }} >
                             <button className="close-btn" style={{ display: m }} onClick={openMenu}><Close /></button>
                             <Sidebar />
-                            <NavButton smallScreen={smallScreen}/>
+                            <NavButton />
                         </div>
                     </div>
                     <div className="right-nav"><NavbarRights /></div>

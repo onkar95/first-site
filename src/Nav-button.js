@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import Navbar from './Navbar';
 import './App.css';
 // import Search from '@material-ui/icons/Search';
@@ -9,50 +9,50 @@ import './App.css';
 // import Twitter from '@material-ui/icons/Twitter';
 // import Navbar2 from "./Navbar-right";
 // import Close from '@material-ui/icons/Clear';
-import {Link, useLocation} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 
 
-function NavButton(props) {
-    const [hide, show] = useState();
-    const [l, m] = useState('0px');
-    const [hideNavbar, showNavbar] = useState();
-    let location = useLocation();
+function NavButton() {
+    // const [hide, show] = useState();
+    // const [l, m] = useState('0px');
+    // const [hideNavbar, showNavbar] = useState();
+    // let location = useLocation();
     // let width = () => {
         
     // }
 
 
-    const openNav = () => {
-        if (hide === 'none') {
-            show('flex')
-        }
-        else { show('none') }
-    }
-    const closeSidebar = () => {
-        show('none')
-    }
+    // const openNav = () => {
+    //     if (hide === 'none') {
+    //         show('flex')
+    //     }
+    //     else { show('none') }
+    // }
+    // const closeSidebar = () => {
+    //     show('none')
+    // }
 
-    const openMenu = () => {
-        if (hideNavbar === 'none') {
-            showNavbar('flex')
-            m('none')
+    // const openMenu = () => {
+    //     if (hideNavbar === 'none') {
+    //         showNavbar('flex')
+    //         m('none')
 
-        }
-        else {
-            showNavbar('none')
-            m('flex')
-        }
+    //     }
+    //     else {
+    //         showNavbar('none')
+    //         m('flex')
+    //     }
         
-    }
-    const smallScreen = () => {
-        let nav = document.getElementById("smallNav");
-        let btn=document.getElementById("btn")
-        return (nav.style.display = 'none',
-        btn.style.display='none'
-        )
-    }
+    // }
+    // const smallScreen = () => {
+    //     let nav = document.getElementById("smallNav");
+    //     let btn=document.getElementById("btn")
+    //     return (nav.style.display = 'none',
+    //     btn.style.display='none'
+    //     )
+    // }
 
 
 
