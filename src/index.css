@@ -73,13 +73,13 @@
 
 @media (max-width:540px) {
 
-    .contact-form {}
+
 
     .contact-p {
         display: none;
     }
 
-    .contact-form button {}
+
 
     .footer-links {
         /* display: flex; */
@@ -110,6 +110,7 @@
         background-color: rgb(214 210 210);
         transition: 0.5s;
     }
+
     .sidebar a {
         padding: 2px 4px 2px 0px;
         text-decoration: none;
@@ -118,6 +119,7 @@
         /* display: block; */
         transition: 0.3s;
     }
+
     .sidebar .closebtn {
         /* position: absolute; */
         top: 0;
@@ -125,6 +127,7 @@
         font-size: 36px;
         margin-left: 50px;
     }
+
     .openbtn {
         font-size: 20px;
         cursor: pointer;
@@ -184,9 +187,11 @@
         margin: 10px 5px;
         display: flex;
     }
-    .navbar-r1{
+
+    .navbar-r1 {
         display: none;
     }
+
     .smallScreen-navbar-r1 {
         display: flex;
         margin: 10px 10px;
@@ -204,6 +209,7 @@
         transition: 2s;
         overflow: scroll;
     }
+
     .dropdown-content-grid {
         display: none;
         position: absolute;
@@ -216,18 +222,19 @@
         display: grid;
         grid-template-columns: 100px 100px;
     }
+
     .nav-button {
         display: flex;
         flex-direction: column;
     }
-    .close-btn{
+
+    .close-btn {
         width: fit-content;
-        background-color:transparent;
-        border:none;
+        background-color: transparent;
+        border: none;
         display: block;
     }
 
-    .right-buttons {}
 
     .contact-form button {
         width: 100%;
@@ -256,7 +263,7 @@
 }
 
 @media(max-width:330px) {
-    .contact-form {}
+
 
     .contact-form input {
         width: 64%;
@@ -287,9 +294,11 @@
         display: grid;
         grid-template-columns: repeat(1, 200px);
     }
-    .navbar-r1{
+
+    .navbar-r1 {
         width: 180px;
     }
+
     .dropdown-content-grid {
         display: none;
         position: absolute;
@@ -305,18 +314,20 @@
         margin: 0px;
         padding: 0px;
         line-height: 2px;
-    }}
+    }
+}
+
 @media(min-width:700px) {
 
-.dropdown-content-grid {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
+    .dropdown-content-grid {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
 
-}
+    }
 }

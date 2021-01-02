@@ -1,7 +1,7 @@
 
 import React from 'react';
 // import image from './images/img8.jpg'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -10,7 +10,7 @@ function Footer() {
                 <div className="footer-items">
                     &copy;
                     Nova all rights reserved.
-        </div>
+                </div>
                 <div className="footer-li">
                     <ul className="footer-links footer-items">
                         <div><Link to="/home">Contact Press</Link></div>

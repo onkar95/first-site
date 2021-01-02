@@ -11,7 +11,7 @@
 
 
 
-.heading{
+.heading {
     margin: 10px 10px;
     display: flex;
     background-color: rgb(245 221 221);
@@ -39,28 +39,32 @@
     margin: 10px 10px;
     padding: 5px 5px;
 }
+
 /* .dropbtn:active{
     color: #df541d;
     background-color: #000;
 
 } */
 
-.navbar1-small-button{
+.navbar1-small-button {
     display: none;
 }
-.small-nav{
+
+.small-nav {
     display: none;
 }
-.close-btn1{
+
+.close-btn1 {
     width: fit-content;
-    background-color:transparent;
-    border:none;
+    background-color: transparent;
+    border: none;
     display: block;
 }
 
-.close-btn{
-display: none;
+.close-btn {
+    display: none;
 }
+
 .logo {
     /* margin: 11px 18px; */
     padding: 5px 12px;
@@ -75,7 +79,7 @@ display: none;
 }
 
 
-.language{
+.language {
     /* display: grid;
     grid-template-columns: 50px 50px 50px; */
     padding: 8px 8px 8px 32px;
@@ -87,31 +91,35 @@ display: none;
     color: #000;
 
 }
-.language-name{
+
+.language-name {
     display: grid;
-    grid-template-columns:repeat(3,0.3fr);
-    margin: 20px ;
+    grid-template-columns: repeat(3, 0.3fr);
+    margin: 20px;
     color: #000;
 }
 
-.sidebar-text{
+.sidebar-text {
     margin: 10px 15px;
     margin-top: 30px;
 }
-.sidebar-text h3{
+
+.sidebar-text h3 {
     margin-bottom: 10px;
     text-align: center;
 
 }
-.connectus{
+
+.connectus {
     margin-top: 20px;
 }
 
-.navbar-r1 a{
+.navbar-r1 a {
     text-decoration: none;
     color: #000;
 }
-.navbar-r1 a:hover{
+
+.navbar-r1 a:hover {
     text-decoration: none;
     color: #df541d;
 }
