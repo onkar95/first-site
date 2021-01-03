@@ -59,7 +59,7 @@ function NavbarRight(props) {
                                 </span>
                                 <Link to="" className="forgt-pass">forget password</Link>
                             </div>
-                            <Link to="" className="login-btn">Login</Link>
+                            <button  className="login-btn">Login</button>
                             <div>
                                 <Link to="" className="cret-account">No Account?Create here?</Link>
                             </div>
