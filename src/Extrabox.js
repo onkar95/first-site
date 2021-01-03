@@ -11,11 +11,15 @@ import Boxes from './Boxes';
 function Extrabox() {
     return (
         <>
-            <Boxes />
-            <Showing/>
+            <div className="blog-box-container">
+                <Boxes />
+                <Boxes />
+                <Boxes />
+            </div>
+            <Showing  num="7-9 of 9" />
         </>
     )
-    
+
 }
 
 export default Extrabox;

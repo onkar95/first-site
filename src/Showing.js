@@ -6,12 +6,12 @@ import Arrowl from '@material-ui/icons/ArrowBackIos';
 import Arrowr from '@material-ui/icons/ArrowForwardIos';
 import { Link } from 'react-router-dom'
 
-function Showing() {
+function Showing(props) {
     return (
         <>
             <div className="blog-page-info">
                 <div className="page-info-content">
-                    <p>Showing 1-6 of 7</p>
+                    <p>  Showing {props.num }</p>
                 </div>
                 <div className="number-buttons">
                     <div>
