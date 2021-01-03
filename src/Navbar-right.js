@@ -67,9 +67,9 @@ function NavbarRight(props) {
                             <hr className="hr-form" />
                             <h2 className="connect">Connect us</h2>
                             <ul className="social-media">
-                                <Link to="www.facebook.com"><Facebook /></Link>
-                                <Link to="www.instagram.com"><Instagram /></Link>
-                                <Link to="www.twitter.com"><Twitter /></Link>
+                                <a href="https://www.facebook.com/onkar.kotule.50" target="_blank"><Facebook /></a>
+                                <a href="https://www.instagram.com/95onkar/" target="_blank"><Instagram /></a>
+                                <a href="https://www.twitter.com" target="_blank"><Twitter /></a>
                             </ul>
                         </form>
 
