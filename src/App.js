@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Contact from './Contact';
 import Blog from './Blogs'
-// import Boxes from './Boxes'
+import Page from './Page'
 import './blog.css'
 import './contactAndFooter.css'
 import './navbar.css'
@@ -25,6 +25,13 @@ function App() {
   const load = () => {
 
   }
+  // function scrollTop() {
+  //   const { pathname } = useLocation();
+  //   useEffect(() => {
+  //       window.scrollTo(0, 0);
+  //   }, [pathname]);
+    
+  // }
 
   return (
     < >
@@ -43,6 +50,9 @@ function App() {
         </Switch>
         <Switch>
           <Route path='/blog-boxes' component={Extrabox}></Route>
+        </Switch>
+        <Switch>
+          <Route path='/page' component={Page}></Route>
         </Switch>
         <hr />
         <Footer />

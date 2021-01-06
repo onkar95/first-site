@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import Boxes from './Boxes';
-import image from './images/img8.jpg'
+// import image from './images/img8.jpg'
 // import Arrowl from '@material-ui/icons/ArrowBackIos';
 // import Arrowr from '@material-ui/icons/ArrowForwardIos';
 // import {Link, useLocation} from 'react-router-dom'
 import Showing from './Showing';
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 
 
 function Blog() {

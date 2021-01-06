@@ -13,7 +13,7 @@ function Showing(props) {
                 <div className="page-info-content">
                     <p>  Showing {props.num }</p>
                 </div>
-                <div className="number-buttons">
+                <div className="number-buttons" >
                     <div>
                         <Link to="/blog"><Arrowl /></Link>
                     </div>
@@ -24,7 +24,7 @@ function Showing(props) {
                         <Link to="/blog-boxes">2</Link>
                     </div>
                     <div>
-                        <Link to="/blog-boxes"><Arrowr /></Link>
+                        <Link to="/blog-boxes"  ><Arrowr /></Link>
                     </div>
                 </div>
             </div>
