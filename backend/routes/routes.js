@@ -6,6 +6,7 @@ const login = require('../modules/schema')
 router.route('/login').post((request, response) => {
     const loginUser = new login({
         name: request.body.name,
+        username: request.body.username,
         password: request.body.password,
         email: request.body.email
     })

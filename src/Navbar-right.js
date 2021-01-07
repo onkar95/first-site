@@ -8,7 +8,6 @@ import Facebook from '@material-ui/icons/Facebook';
 import Instagram from '@material-ui/icons/Instagram';
 import Twitter from '@material-ui/icons/Twitter';
 import { Link } from 'react-router-dom'
-import axios from 'axios'
 // import { useLocation } from 'react-router-dom'
 // import { response } from 'express';
 
@@ -57,15 +56,7 @@ function NavbarRight(props) {
     function onClick(a) {
         a.preventDefault()
 
-        const values = {
-            name: OldValue.name,
-            password: OldValue.password
-        }
-        console.log(values.name);
-
-        axios.post("http://localhost:4000/app/login", values)
-            .then(res => console.log(res.data))
-            .catch(err => console.log(err))
+  
 
         // window.location('/blog')
     }
@@ -77,10 +68,10 @@ function NavbarRight(props) {
         <div className="right-buttons" style={{ display: props.display }}>
             <div className="dropbtn new-dropbtn"><Search /></div>
             <div className="dropdown">
-                <div className="dropbtn" onClick={LoginDropdown}><Account /></div>
+                <div className="dropbtn"  onClick={LoginDropdown}><Account /></div>
                 <div className="dropdown-content" style={{ display: logins }} >
                     <div className="login-content">
-                        <form encType="multipart/form-data" method="post" className="login-form">
+                        <form encType="multipart/form-data" method="post"  className="login-form">
                             <h1>Login to  Account</h1>
                             <div className="input">
                                 <input type="text"
@@ -88,14 +79,14 @@ function NavbarRight(props) {
                                     onChange={onChange}
                                     name="name"
                                     id="name"
-                                    placeholder="Enter Your Name"
+                                    placeholder="Username"
                                     autoComplete="off" />
                                 <input type="text"
                                     value={OldValue.password}
                                     onChange={onChange}
                                     name="password"
                                     id="password"
-                                    placeholder="Enter Your password"
+                                    placeholder="Password"
                                     autoComplete="off" />
                             </div>
                             <div className="checkbox-a" data-toggle="buttons">
@@ -107,7 +98,7 @@ function NavbarRight(props) {
                             </div>
                             <button className="login-btn" onClick={onClick} >Login</button>
                             <div>
-                                <Link to="" className="cret-account">No Account?Create here?</Link>
+                                <Link to="/register" className="cret-account">No Account?Create here?</Link>
                             </div>
 
                             <hr className="hr-form" />

@@ -12,7 +12,7 @@ import './index.css'
 import './navbarbuttons.css'
 import { Route, Switch } from 'react-router-dom';
 import Footer from './Footer';
-// import Showing from './Showing';
+import Register from './Register';
 import Extrabox from './Extrabox';
 // import createHistory from 'history/​createBrowserHistory'
 
@@ -53,6 +53,9 @@ function App() {
         </Switch>
         <Switch>
           <Route path='/page' component={Page}></Route>
+        </Switch>
+        <Switch>
+          <Route path='/register' component={Register}></Route>
         </Switch>
         <hr />
         <Footer />
