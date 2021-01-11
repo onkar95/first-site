@@ -65,7 +65,7 @@ function NavbarRight(props) {
 
 
     return (
-        <div className="right-buttons" style={{ display: props.display }}>
+        <div className="right-buttons" style={{ display: props.display }} >
             <div className="dropbtn new-dropbtn"><Search /></div>
             <div className="dropdown">
                 <div className="dropbtn"  onClick={LoginDropdown}><Account /></div>
